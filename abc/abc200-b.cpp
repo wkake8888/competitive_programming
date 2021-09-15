@@ -1,34 +1,17 @@
 #include <iostream>
 using namespace std;
 
-string divide_str(string s) {
-    string ans = "";
-    string left = "";
-    if (s == "0") return 0;
-    else {
-        s.erase(-2, -1);
-        for (long unsigned int i = 0; i < s.size(); i++) {
-            char a = s[i];
-            int ia = a - '0';
-            ans += to_string(stoi(left + s[i]) / 2);
-            left = "";
-            if (ia % 2 != 0) left += "1";
-        }
-    }
-    return ans;
-}
-
 int main() {
-	string n;
-    int k;
+    long long n , k;
     cin >> n >> k;
 
     for (int i = 0; i < k; i++) {
-        char a = n[-3];
-        int ia = a - '0';
-        if (n[-1] == '0' && n[-2] == '0' && ia % 2 == 0) n = divide_str(n);
-        else n = to_string(n) + "200";
+        if (n % 200 == 0) n /= 200;
+        else {
+            string a = to_string(n);
+            a += "200";
+            n = stoll(a);
+        }
     }
     cout << n << endl;
 }
-

@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+        "valarray": "cpp",
+        "filesystem": "cpp",
+        "iosfwd": "cpp",
+        "complex": "cpp",
+        "utility": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
